@@ -1,0 +1,470 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.header {
+    background-color: #316DC3 !important;
+    height: 50px;
+    text-align: center;
+    margin-top: -20px;
+    width: inherit;
+}
+
+.headericons {
+    display: inline;
+    padding: 10px;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-youtube {
+    color: white;
+}
+
+.fa-angle-down {
+    vertical-align: middle;
+    font-weight: normal;
+}
+
+.headerimages {
+    margin-top: 20px;
+}
+
+.headertext {
+    color: white;
+    margin-left: 60px;
+}
+
+.headerbuttons {
+    background-color: white;
+    padding: 5px;
+    font-size: small;
+}
+
+.navbar {
+    height: 80px;
+    background-color: #f7f8fa;
+}
+
+.navbaritems {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    font-size: 10pt;
+}
+
+.dropdown {
+    padding: 4px;
+    position: relative;
+    bottom: 15px;
+}
+
+.saylanilogo {
+    margin-left: 90px;
+    display: inline;
+    margin-right: 400px;
+    margin-top: 10px;
+}
+
+.downarrow {
+    display: inline;
+    vertical-align: bottom;
+}
+
+.homebutton {
+    background-color: #316DC3;
+    border-radius: 20px;
+    color: white;
+}
+
+.dropbtn {
+    padding: 6px;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    line-height: 1.5;
+    width: 100px;
+    padding-top: 25px;
+    background-clip: content-box; /*For not applying background-color to padding area*/
+    box-shadow: inset 0 25px 0 0   #f7f8fa; /* Different color for padding area */
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #316DC3;
+    color: white;    
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: #316DC3;
+	color: white;
+	border-radius: 20px;  /*for rounded corners*/
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+}
+
+.thirdpart {
+	display:flex;
+	overflow: hidden; 
+	margin-top: -20px;
+	height:500px;
+}
+
+.thirdone,.thirdtwo,.thirdthree {
+	margin-top: 20px;
+	transition:0.5s linear;
+	display:block;
+    width: 100%;
+}
+
+.thirdtwo, .thirdthree{
+    max-width: 0px;
+    transform:translateX(1500px);
+}
+
+.tbt {
+    height:70px;
+    width:70px;
+	cursor:pointer;
+	background: none;
+	border: none;
+    background-color:black;
+    opacity: 50%;
+	border-radius: 100%;
+    user-select: none;
+    z-index: 1;
+    position: absolute;
+    color: white;
+    font-size: large;
+}
+
+#tbt1 {
+    top: 350px;
+    left: 40px;
+}
+
+#tbt2 {
+    top: 350px;
+    left: 1200px;
+}
+
+.text-scroll {
+    background-color: #316DC3;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 5px;
+}
+
+.intro {
+    background-color: #f7f8fa;
+}
+
+.introheading {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 24pt;
+    font-weight: 60;
+    margin-bottom: -5px;
+}
+
+.intfrst {
+    color: #316DC3;
+}
+
+.intlst {
+    color: #427900;
+}
+
+.introimg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 40px;
+}
+
+.intrologo::before {
+    position: relative;
+    top: 30px;
+    left: 590px;
+    content: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+    font-size: 2px;
+    color: #427900;
+    background: #427900;
+}
+
+.intrologo::after {
+    position: relative;
+    bottom: 29px;
+    left: 715px;
+    content: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+    font-size: 2px;
+    color: #427900;
+    background: #427900;
+}
+
+.intropara {
+    color: grey;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.fourthpart {
+    background-color: #316DC3;
+    height: 300px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+.fourthpartimages {
+    margin-top: 50px;
+    right: 100px;
+    height: 40px;
+    padding-left: 250px;
+    position: relative;
+}
+
+.fourthpartnumberslist li {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    display: inline;
+    padding: 50px;
+    font-size: 36pt;
+}
+
+.fourthpartparticularslist li {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    display: inline;
+    padding: 40px;
+    font-size: 10pt;
+}
+
+.monthly {
+    color: chartreuse;
+    font-size: 14pt;
+}
+
+.fifthpart {
+    background-color: #f7f8fa;
+}
+
+.boxesline1, .boxesline2 {
+    display: flex;
+}
+
+.fifthpartboxes1 {
+    height: 200px;
+    width: 350px;
+    margin-left: 120px;
+    background-color: white;
+    text-align: center;
+    color: #316DC3;
+}
+
+.fifthpartboxes2 {
+    height: 200px;
+    width: 350px;
+    margin-left: 35px;
+    background-color: white;
+    text-align: center;   
+    color: #316DC3;
+}
+
+.fifthpartboxes3 {
+    height: 200px;
+    width: 350px;
+    margin-left: 35px;
+    background-color: white;
+    text-align: center;
+    color: #316DC3;
+}
+
+.fifthpartboxes4 {
+    height: 200px;
+    width: 350px;
+    margin-left: 120px;
+    margin-top: 35px;
+    background-color: white;
+    text-align: center;
+    color: #316DC3;
+}
+
+.fifthpartboxes5 {
+    height: 200px;
+    width: 350px;
+    margin-left: 35px;
+    margin-top: 35px;
+    background-color: white;
+    text-align: center;
+    color: #316DC3;
+}
+
+.fifthpartboxes6 {
+    height: 200px;
+    width: 350px;
+    margin-left: 35px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    background-color: white;
+    text-align: center;
+    color: #316DC3;
+}
+
+.fifthpartboxes1, .fifthpartboxes2, .fifthpartboxes3, .fifthpartboxes4, .fifthpartboxes5, .fifthpartboxes6 {
+    border: 5px solid rgba(0,0,0,.03);
+    font-family: 'Merriweather', serif;
+}
+
+.mission {
+    float: left;
+    width: 800px;
+    margin-left: 200px;
+    margin-right: 20px;
+}
+
+.missionheading {
+    color: #316DC3;
+}
+
+.mdiv1, .mdiv2, .mdiv3, .mdiv4 {
+    height:70px;
+    width: 300px;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    color: #316DC3;
+    background-color: #f7f8fa;
+    font-family: 'Merriweather', serif;
+}
+
+.missionimg {
+    margin-left: 20px;
+}
+
+.upcoming {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.upcomingheading {
+    color: #316DC3;
+}
+
+.igheading {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 24pt;
+    font-weight: 60;
+    float: none;
+    margin-bottom: -5px;
+}
+
+.igimg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 40px;
+}
+
+.iglogo::before {
+    position: relative;
+    top: 30px;
+    left: 590px;
+    content: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+    font-size: 2px;
+    color: #427900;
+    background: #427900;
+}
+
+.iglogo::after {
+    position: relative;
+    bottom: 29px;
+    left: 715px;
+    content: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+    font-size: 2px;
+    color: #427900;
+    background: #427900;
+}
+
+.galleryimages {
+    display: flex;
+    justify-content: center;    
+}
+
+.gallerythumbs {
+    height: 180px;
+    width: 240px;
+    margin: 5px;
+    margin-bottom: 200px;
+}
+
+.contactinfo {
+    display: flex;
+    background-color: #333333;
+    color: white;
+}
+
+.address {
+    line-height: 1.7;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.usefullinks {
+    margin-left: 100px;
+}
+
+.usefullinksheading::after {
+    position: relative;
+    top: 10px;
+    right: 95px;
+    content: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+    font-size: 2px;
+    color: #427900;
+    background: #427900;
+}
+
+.usefullinksnarrowline {
+    position:relative;
+    width: 220px;
+    left: 55px;
+    bottom: 17px;
+}
+
+.connect {
+    margin-left: 200px;
+}
+
+.connecticons {
+    list-style-type: none;
+    display: flex;
+    margin-left: -40px;
+}
+
+.conico {
+    margin-left: 50px;
+}
+
