@@ -3,42 +3,61 @@ body {
     margin: 0px;
 }
 
+/*Header*/
+
 .header {
     background-color: #316DC3 !important;
     height: 50px;
     text-align: center;
     margin-top: -20px;
-    width: inherit;
+    width: 100%;
 }
 
 .headericons {
+    display: inline-block;
+    /* margin-right: 50px; */
+}
+
+.headericonslist {
     display: inline;
-    padding: 10px;
+    padding-left: 10px;
 }
 
 .fa-facebook, .fa-twitter, .fa-instagram, .fa-youtube {
     color: white;
 }
 
-.fa-angle-down {
-    vertical-align: middle;
-    font-weight: normal;
+.headertext {
+    display: inline-block;
+    color: white;
+    margin-left: 60px;
+    margin-right: 40px;
 }
 
 .headerimages {
     margin-top: 20px;
 }
 
-.headertext {
-    color: white;
-    margin-left: 60px;
+.headerbuttons {
+    display:inline-block
 }
 
-.headerbuttons {
+.headerbuttonslist {
+    display: inline;
+    text-decoration: none;
+    list-style-type: none;
     background-color: white;
     padding: 5px;
     font-size: small;
 }
+
+
+
+
+
+
+
+/* Navigation bar*/
 
 .navbar {
     height: 80px;
@@ -65,9 +84,13 @@ body {
     margin-top: 10px;
 }
 
-.downarrow {
+.navlist {
     display: inline;
-    vertical-align: bottom;
+}
+
+.fa-angle-down {
+    vertical-align: middle;
+    font-weight: normal;
 }
 
 .homebutton {
@@ -194,30 +217,38 @@ body {
 }
 
 .introimg {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    display: inline;
     height: 40px;
 }
 
+.intrologo {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
 .intrologo::before {
-    position: relative;
-    top: 30px;
-    left: 590px;
-    content: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
-    font-size: 2px;
+    content: "";
     color: #427900;
     background: #427900;
+    margin-right: 10px;
+    height: 2px;
+    width: 50px;
+    margin-top: 30px;
 }
 
 .intrologo::after {
-    position: relative;
-    bottom: 29px;
-    left: 715px;
-    content: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
-    font-size: 2px;
+    content: "";
     color: #427900;
     background: #427900;
+    margin-left: 10px;
+    height: 2px;
+    width: 50px;
+    margin-top: 30px;
 }
 
 .intropara {
@@ -259,6 +290,10 @@ body {
     display: inline;
     padding: 40px;
     font-size: 10pt;
+}
+
+.daily {
+    margin-right: 950px;
 }
 
 .monthly {
@@ -468,3 +503,253 @@ body {
     margin-left: 50px;
 }
 
+
+
+@media only screen and (max-width: 800px) {
+    .header {
+        height: 150px;
+    }
+
+    .headertext {
+        margin-top: 20px;
+        display: block;
+        font-size: 3vw;
+    }
+    
+    .headerbuttons {
+        margin-top: 10px;
+        display: inline-block;
+        justify-content: center;
+    }
+
+    .headerbuttonslist {
+        display: inline;
+    }
+
+    .navlist {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        height: 120px;
+        text-align: center
+    }
+
+    .fourthpartimages {
+        margin-top: 20px;
+        right: 50px;
+        height: 20px;
+        padding-left: 100px;
+        /* position: relative; */
+    }
+
+    .fourthpartnumberslist li {
+        font-size: 15px;
+        padding: 20px;
+        margin-right: 20px;
+    }
+
+    .fourthpartparticularslist li {
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+        display: inline;
+        padding: 20px;
+        font-size: 5pt;
+    }
+
+    .monthly {
+        font-size: 5pt;
+    }
+
+    .daily {
+        margin-right: 450px;
+    }
+
+    .fourthpart {
+        height: 150px;
+    }
+
+    .boxesline1, .boxesline2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+
+    .fifthpartboxes1, .fifthpartboxes2, .fifthpartboxes3, .fifthpartboxes4, .fifthpartboxes5, .fifthpartboxes6 {
+        margin: 10px 0px 10px 10px;
+    }
+
+    .mission {
+        float: none;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .missionheading {
+        color: #316DC3;
+    }
+    
+    .mdiv1, .mdiv2, .mdiv3, .mdiv4 {
+        height:70px;
+        width: 300px;
+        float: none;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        color: #316DC3;
+        background-color: #f7f8fa;
+        font-family: 'Merriweather', serif;
+    }
+    
+    .missionimg {
+        margin-left: 20px;
+    }
+    
+    .upcoming {
+        float: none;
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .upcomingheading {
+        color: #316DC3;
+    }
+    
+    .iglogo::before {
+        display: none;
+    }
+    
+    .iglogo::after {
+        display: none;
+    }
+    
+    .galleryimages {
+        display: block;
+        justify-content: center;
+        width: 260px;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+    
+    .gallerythumbs {
+        height: 180px;
+        width: 240px;
+        margin: 5px;
+        margin-bottom: 5px;
+    }
+
+    .contactinfo {
+        display: block;
+        background-color: #333333;
+        color: white;
+    }
+    
+    .address {
+        line-height: 1.7;
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+    
+    .usefullinks {
+        margin-left: 0px;
+    }
+    
+    .usefullinksheading::after {
+        position: relative;
+        top: 10px;
+        right: 95px;
+        content: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        font-size: 2px;
+        color: #427900;
+        background: #427900;
+    }
+    
+    .usefullinksnarrowline {
+        display: none;
+    }
+    
+    .connect {
+        margin-left: 0px;
+    }
+    
+    .connecticons {
+        list-style-type: none;
+        display: flex;
+        margin-left: -40px;
+    }
+    
+    .conico {
+        margin-left: 10px;
+    }
+
+    .tbt {
+        height:20px;
+        width:20px;
+        cursor:pointer;
+        background: none;
+        border: none;
+        background-color:black;
+        opacity: 50%;
+        border-radius: 100%;
+        user-select: none;
+        position: unset;
+        color: white;
+        font-size: large;
+    }
+    
+    #tbt1 {
+        top: 0px;
+        left: 0px;
+    }
+    
+    #tbt2 {
+        top: 0px;
+        left: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 620px) {
+    .navbaritems {
+        display: block;        
+    }
+
+    .navbar {
+        height: 350px;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+    .fourthpartimages {
+        display: none;
+    }
+
+    .fourthpartnumberslist li {
+        font-size: 5pt;
+        padding: 5px;
+    }
+
+    .fourthpartparticularslist li {
+        padding: 0px;
+        font-size: 3pt;
+    }
+
+    .monthly {
+        font-size: 3pt;
+    }
+    
+    .daily {
+        margin-right: 200px;
+    }
+
+    .fourthpart {
+        height: 100px;
+    }
+}
